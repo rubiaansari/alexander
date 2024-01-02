@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALEXANDER</title>
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Bitter:ital,wght@1,300&family=Bona+Nova:ital@1&family=Brygada+1918:ital@0;1&family=Caveat&family=Charm&family=Cormorant+Garamond:ital,wght@1,700&family=Cormorant+Upright:wght@600&family=Dancing+Script:wght@400;500;600&family=Gabriela&family=Great+Vibes&family=Inter:wght@300&family=Libre+Baskerville:ital@0;1&family=Lobster&family=Lobster+Two:ital@0;1&family=Merriweather:wght@400;900&family=Montserrat:wght@300;400&family=News+Cycle&family=Nova+Square&family=PT+Sans:ital@1&family=PT+Serif:ital@0;1&family=Playball&family=Playfair+Display&family=Poppins&family=Salsa&family=Source+Code+Pro:ital,wght@1,200&family=Tangerine:wght@700&family=Ubuntu:ital,wght@1,500&family=Whisper&family=Yellowtail&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Bona+Nova:ital@1&family=Brygada+1918:ital@0;1&family=Caveat&family=Charm&family=Cormorant+Garamond:ital,wght@1,700&family=Cormorant+Upright:wght@600&family=Dancing+Script:wght@400;500;600&family=Gabriela&family=Great+Vibes&family=Inter:wght@300&family=Libre+Baskerville&family=Lobster&family=Lobster+Two:ital@0;1&family=Merriweather:wght@400;900&family=Montserrat:wght@300;400&family=News+Cycle&family=Nova+Square&family=PT+Sans:ital@1&family=PT+Serif:ital@0;1&family=Playball&family=Playfair+Display&family=Poppins&family=Salsa&family=Tangerine:wght@700&family=Ubuntu:ital,wght@1,500&family=Whisper&family=Yellowtail&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Bitter:ital,wght@1,100;1,300&family=Bona+Nova:ital@1&family=Brygada+1918:ital@0;1&family=Caveat&family=Charm&family=Cormorant+Garamond:ital,wght@1,700&family=Dancing+Script:wght@400;500;600&family=EB+Garamond&family=Gabriela&family=Great+Vibes&family=Inter:wght@300&family=Libre+Baskerville:ital@0;1&family=Lobster&family=Lobster+Two:ital@0;1&family=Merriweather:wght@400;900&family=Montserrat:wght@300;400&family=News+Cycle&family=Nova+Square&family=Open+Sans:wght@300&family=PT+Sans:ital@1&family=PT+Serif:ital@0;1&family=Pacifico&family=Playball&family=Playfair+Display:ital@0;1&family=Poppins&family=Salsa&family=Satisfy&family=Source+Code+Pro:ital,wght@1,200&family=Tangerine:wght@700&family=Ubuntu:ital,wght@1,500&family=Whisper&family=Work+Sans&family=Yellowtail&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Bitter:ital,wght@1,100;1,300&family=Bona+Nova:ital@1&family=Brygada+1918:ital@0;1&family=Caveat&family=Charm&family=Cormorant+Garamond:ital,wght@1,700&family=Crimson+Text:ital,wght@1,600&family=Dancing+Script:wght@400;500;600&family=EB+Garamond:ital@0;1&family=Gabriela&family=Great+Vibes&family=Inter:wght@300&family=Libre+Baskerville:ital@0;1&family=Lobster&family=Lobster+Two:ital@0;1&family=Merriweather:wght@400;900&family=Montserrat:wght@300;400&family=News+Cycle&family=Nova+Square&family=Open+Sans:wght@300&family=PT+Sans:ital@1&family=PT+Serif:ital@0;1&family=Pacifico&family=Playball&family=Playfair+Display:ital,wght@1,500;1,600&family=Poppins&family=Salsa&family=Satisfy&family=Source+Code+Pro:ital,wght@1,200&family=Tangerine:wght@700&family=Ubuntu:ital,wght@1,500&family=Whisper&family=Work+Sans&family=Yellowtail&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Bitter:ital,wght@1,100;1,300&family=Bona+Nova:ital@1&family=Brygada+1918:ital@0;1&family=Caveat&family=Charm&family=Cormorant+Garamond:ital,wght@1,700&family=Crimson+Text:ital,wght@1,600&family=Dancing+Script:wght@500;600&family=EB+Garamond:ital@0;1&family=Gabriela&family=Great+Vibes&family=Inter:wght@300&family=Libre+Baskerville:ital@0;1&family=Lobster&family=Lobster+Two:ital@0;1&family=Merriweather:wght@400;900&family=Montserrat:wght@300;400&family=News+Cycle&family=Nova+Square&family=Open+Sans:wght@300&family=PT+Sans:ital@1&family=PT+Serif:ital@0;1&family=Pacifico&family=Playball&family=Playfair+Display:ital,wght@1,500;1,600&family=Poppins&family=Salsa&family=Satisfy&family=Source+Code+Pro:ital,wght@1,200&family=Tangerine:wght@700&family=Ubuntu:ital,wght@1,500&family=Whisper&family=Work+Sans&family=Yellowtail&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+<script src="https://kit.fontawesome.com/a3bce48b6c.js" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="inspect.css">
+
+
+</head>
+<body>
+    <div class="container">
+    <div class="box">
+            <img src="Lgo.png" id="logo">
+            
+    <div class="list">
+
+    <ul id="searchBaar">
+        <li><a href="#"> Home</a></li>
+        <li><a href="#"> About </a></li>
+        <li><a href="#"> Portfolio</a></li>
+        <li><a href="#"> pages</a></li>
+        <li><a href="#"> ContactUs</a></li>
+    </ul>
+    </div>
+
+    <button id="btn">Book now</button>
+    <div class="baar"><i class="fa-solid fa-bars" onclick="showMenu()"></i></div>
+    </div>
+        <img src="1.png" id="box-pic1">
+        <img src="img.webp" id="pic1">
+
+        <div class="box-sec">
+       
+        <div class="heading1">
+            <div class="dot"></div>
+                <div class="hh"><h2>professional photographet</h2></div>
+            
+            <div class="heading2">
+                <h1>ALEXANDER DURHAM</h1>
+            </div>
+            <div class="thk-line"></div>
+        </div>
+       
+       
+        <div class="icon-first">
+
+            <i class="fa-brands fa-instagram"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fa-brands fa-twitter"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fa-brands fa-behance"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="lorm">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>Non magnam, odit magni voluptatibus voluptatum quidem <br>laboriosam tempore dolore praesentium, provident ipsam <br>ullam quis quasi fugiat officia commodi deserunt eos ratione.</p>
+        </div>
+        <button id="btn1">view portfolio</button>
+      
+        </div>
+    </div>
+    <div class="container1">
+        <div class="box1">
+            <h2>"The  best  images  are  the  ones  that  can <br> maintain  their  strenght  and  have  an <br>impact  for  years, regardless  of how <br> many  times  they  are  viewed. "</h2>
+            <div class="dot1"></div>
+            <h4>Alexander Durham</h4>
+        </div>
+    </div> 
+    <div class="container2">
+    <div class="box2">
+        <img src="1.png" id="box-pic2">
+        <img src="image.webp" id="sec-pic">
+                    </div>
+            <div class="box2-sec">
+        <div class="ptag1">
+        <div class="dot3"></div>
+        <h3>SOMETHING ABOUT ME</h3>
+        
+       </div>
+       <div class="head1">
+        <h1>I'm Professional <br>Photographer</h1>
+       </div>
+       <div class="lorm1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos modi cupiditate<br> necessitatibus? Illum, eos.</div>
+    </div>
+
+    <div class="icon2">
+
+        <i class="fa-brands fa-instagram"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa-brands fa-twitter"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa-brands fa-behance"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <div class="line2"></div> 
+    <div class="he1"> MY AWARD</div>
+    <div class="he2"> <i class="fa-solid fa-angles-right"></i>Internatinal Photography Award</div>
+    <div class="he3"> <i class="fa-solid fa-angles-right"></i>Sony World Photography Award 2011</div>
+    <div class="he4">  <i class="fa-solid fa-angles-right"></i>The National Geography Photography Content</div>
+        </div>
+    <div class="icn">
+		<img src="brand1.png" id="bd1"> 
+		<img src="brand2.png" id="bd2"> 
+		<img src="brand3.png" id="bd3"> 
+		<img src="brand4.png" id="bd4"> 
+		<img src="brand5.png" id="bd5"> 
+
+	</div>
+    </div>
+    <div class="container3">
+        <div class="box3">
+            <img src="1.webp" id="image1">
+            <div class="txt1">
+                <h1>Women In The Forest</h1>
+                <h3>Vivamus Nec Mauris Sad</h3>
+            </div>
+                 </div>
+                    <div class="box3-sec">   
+            <img src="2.webp" id="image2">
+            <div class="txt2">
+                <h1>Nature Mental Health</h1>
+                <h3>Mauris Loorest tincidunt</h3>
+            </div>
+            <img src="3.webp" id="image3">
+            <div class="txt3">
+                <h1>Beautiful American Girl</h1>
+                <h3>Etiam In Posuere Turpis</h3>
+            </div>
+            <img src="4.webp" id="image4">
+            <div class="txt4">
+                <h1>Beautiful Readhead Girl</h1>
+                <h3>Pellentesque Omare Turpis Turpis</h3>
+            </div>
+            <img src="5.webp" id="image5">
+            <div class="txt5">
+                <h1>Beautiful Eye With Brown Hairs</h1>
+                <h3>Nulla Looreet Nibh Et Lectus</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container4">
+        <div class="box4">
+            <div class="line3"></div>
+            <img src="6.webp" id="girl">
+        </div>
+        <div class="dottext">
+        <div class="dot4"></div>
+            <h2>ABOUT MY SKILLS</h2>
+            </div>
+            <div class="box4-sec">
+            <h1>I Have Experience In This Field</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nesciunt<br> maxime quiincidunt ratione, error, molestiae nemo praesentium illo alias<br> sunt ab magnam sint deserunt, nisi itaque ipsa non fugit.</p>
+                    <br>
+            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                per inceptos himenaeos. Fusce</p>
+        </div>
+        <div class="prsntg">
+        <div class="prsntg1">
+            <h2>Photography</h2>
+
+            <div class="pbox1">
+                <div class="color-box1">95%</div>
+            </div>
+
+        </div>
+
+        <div class="prsntg2">
+            <h2>Design Thinking</h2>
+            
+            <div class="pbox2">
+                <div class="color-box2">75%</div>
+            </div>
+
+        </div>
+
+        <div class="prsntg3">
+            <h2>Videography</h2>
+            
+            <div class="pbox3">
+                <div class="color-box3">90%</div>
+            </div>
+
+        </div>
+        <div class="prsntg4">
+            <h2>Social Innovation</h2>
+            
+            <div class="pbox4">
+                <div class="color-box4">85%</div>
+            </div>
+
+        </div>
+
+        </div>
+    </div>
+    <div class="container5">
+        <div class="box5">
+            <img src="girl.webp" id="grl-pic">
+            <img src="girl2.webp" id="grl-pic2">
+        </div>
+       <div class="box5-sec"> 
+        <div class="thn-line"></div>
+            <div class="p1"><p>OUR FORTFOLIO</p></div>
+        <div class="heading3">
+            <p>Recent Work <br>Completed</p>
+        </div>
+        <div class="lorm2">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Enim sint aliquid soluta, minima laboriosam, ratione <br>excepturi atque autem ad sit vitae? Quas non eum tempore <br>voluptas enim dignissimos sapiente magnam.</div>
+        <div class="lorm3"> class aptent taciti sociosqu ad litora torquent per conubia nostra, <br>per inceptos himenaeos. Fusce</div>
+        <button id="btn2">view portfolio</button>
+    </div>
+   </div> 
+    <div class="container6">
+        <div class="box6">
+
+            <div class="b-full-box1">
+            <img src="b1.webp" id="b-pic1">
+                <div class="b-pic1">
+                    <p>Wedding &Prewedding</p>
+                    <p2>Lorem, ipsum dolor sit amet <br>consectetur adipisicin elit..Ut elit tellus</p2>
+                    </div>
+                </div>
+
+                <div class="b-full-box2">
+            <img src="b2.webp" id="b-pic2">
+            <div class="b-pic2">
+                <p>Company Profile</p>
+                <p2>Lorem, ipsum dolor sit amet<br> consectetur adipisicing elit..Ut elit tellus</p2>
+                </div>
+            </div>
+                
+            <div class="b-full-box3">
+            <img src="b3.webp" id="b-pic3">
+            <div class="b-pic3">
+                <p>Model Photoshoot</p>
+                <p2>Lorem, ipsum dolor sit amet<br> consectetur adipisicing elit..Ut elit tellus</p2>
+              </div>
+            </div>
+
+            <div class="b-full-box4">
+            <img src="b4.webp" id="b-pic4">
+            <div class="b-pic4">
+                <p>Videography</p>
+                <p2>Lorem, ipsum dolor sit amet<br> consectetur adipisicing elit..Ut elit tellus</p2>
+             </div>
+             </div>
+        </div>
+
+        <div class="box6-sec-box">
+        <div class="dottext1">
+            <div class="dot5"></div>
+                <h2>WHY CHOOSE US</h2>
+                </div>
+                <div class="box6-sec">
+                <h1>The Best Service For<br> Our Customers</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Omnis nesciunt maxime qui incidunt ratione, error,<br> molestiae nemo praesentium illo alias sunt ab magnam sint<br> deserunt, nisi itaque ipsa non fugit.</p>
+                        <br><br>
+                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra,<br> per inceptos himenaeos. Fusce</p>
+                    
+                <button id="btn3">Learn More</button>
+            </div>
+            </div>
+    </div>
+    <div class="container7">
+            <div class="box7">
+            <div class="inner-box-left">
+                <div class="dot-text">
+                    <div class="dot6"></div>
+                        <h6>LETEST TESTIMONIALS</h6>
+                    </div>
+                    <h1>Words From My <br>Clients</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Deserunt reprehenderit minus iusto placeat, repellat tempore <br>soluta magni voluptatum hic, incidunt nulla ad necessitatibus<br> ut facilis quasi earum aliquam dignissimos est.</p>
+                <button id="btn4">View Testimonials</button>
+                </div>
+
+                <div class="inner-box-right">
+                    
+                    <img src="coma.png" id="cma">
+                    <div class="client-box">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Magni, laboriosam autem sequi sunt aliquid natus<br> molestias facilis, perspiciatis ut ipsam fugiat suscipit, <br>ex minus. Neque quo molestias officiis blanditiis incidunt.</p>
+                    <img src="client.webp" id="clnt">
+                    <h2>Abraham Smith</h2>
+                    <h3>CEO</h3>
+                    </div>
+                </div>
+    </div>
+</div>
+<div class="container8">
+    <div class="box8">
+        <div class="card1">
+            <img src="d1.webp" id="crd-pic1">
+            <div class="card1-text">
+                <h2>What is a digital asset<br>manager and why do i<br>need one?</h2>
+                        <div class="hd1">
+                            <p1>january 25,2022</p1>
+                            <h1>//</h1><br><br>
+                            <p1> no comments</p1>
+                        </div>
+                <p>Fusce consequat vitae enim et facilisis<br> Phasellus tempus eleifend sagittis.<br> Suspendisse cursus nisl et tincidunt<br> sollicitudin. Donec interdum elementum <br>pharetra. Quisque tempor elementum <br>ultricies. Nullam</p>
+            </div>
+        </div>
+        <div class="card2">
+            
+                <img src="d2.webp" id="crd-pic2">
+                <div class="card2-text">
+                    <h2>What is a digital asset<br>manager and why do i<br>need one?</h2>
+                            <div class="hd2">
+                                <p1>january 25,2022</p1>
+                                <h1>//</h1><br><br>
+                                <p1> no comments</p1>
+                            </div>
+                    <p>Fusce consequat vitae enim et facilisis<br> Phasellus tempus eleifend sagittis.<br> Suspendisse cursus nisl et tincidunt<br> sollicitudin. Donec interdum elementum <br>pharetra. Quisque tempor elementum <br>ultricies. Nullam</p>
+                </div>
+        
+        </div>
+    </div>
+    <div class="box8-sec-part">
+    <div class="dottext2">
+        <div class="dot7"></div>
+            <h2>LATEST NEWS</h2>
+            </div>
+            <div class="box8-sec">
+            <h1>Read Our<br>Latest News</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis<br> nesciunt maxime qui incidunt ratione, error,<br> molestiae nemo praesentium illo alias sunt ab magnam sint<br> deserunt, nisi itaque ipsa non fugit.</p>
+                    <br><br>
+            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra,<br> per inceptos himenaeos. Fusce</p>
+                
+            <button id="btn5">VIEW OUR NEWS</button>
+            </div>
+    </div> 
+</div>
+
+<div class="container9">
+    <div class="box9">
+    <div class="inner-box-left2">
+        <div class="dot-text2">
+            <div class="dot8"></div>
+                <h6>LET'S TO TALK</h6>
+            </div>
+            <h1>keep In Touch</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Deserunt reprehenderit minus iusto placeat, repellat tempore <br>soluta magni voluptatum hic, incidunt nulla ad necessitatibus<br> ut facilis quasi earum aliquam dignissimos est.</p>
+        <button id="btn6">LET'S CHAT</button>
+        </div>
+     </div>
+    </div>
+    
+    <div class="container10">
+        <div class="box10">
+            <div class="image-box">
+                <div class="over-txt">
+                    <h1>GET IN TOUCH</h1>
+                </div>
+            </div>
+            
+                <form>
+                <input type="text" name="name" placeholder="Name" id="name">
+                <input type="text" name="email" placeholder="Email" id="email"><br>
+                <input type="text" name="massage" placeholder="Massage" id="msg"><br>
+                <button id="sbmt">submit</button>
+                </form>
+                
+            
+        </div>
+        <div class="box10-sec">
+            <div class="dot-text3">
+                <div class="dot9"></div>
+                    <h5>CONTACT US</h5>
+                    </div>
+                    <div class="box10-txt">
+                    <h1>Have A Project?</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Omnis nesciunt maxime qui incidunt ratione, error,<br> molestiae nemo praesentium illo alias sunt ab magnam sint<br> deserunt, nisi itaque ipsa non fugit.</p>
+                            <br><br>
+                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra,<br> per inceptos himenaeos. Fusce</p>
+                    </div>
+                    <div class="contact-box">
+                        <div class="in-box1">
+                            <img src="c1.webp" id="c1">
+                                <div class="t-box1">
+                                    <h6>Phone Number</h6>
+                                    <p>123-234-3456</p>
+                                </div>
+                        </div>
+                        <div class="in-box2">
+                            <img src="c2.webp" id="c2">
+                                <div class="t-box2">
+                                    <h6>Email Address</h6>
+                                    <p>hello@gmail.com</p>
+                                </div>
+                        </div>
+                        <div class="in-box3">
+                            <img src="c3.webp" id="c3">
+                                <div class="t-box3">
+                                    <h6>website</h6>
+                                    <p>www.awesamesite.com</p>
+                                </div>
+                        </div>
+                        <div class="in-box4">
+                            <img src="c4.webp" id="c4">
+                                <div class="t-box4">
+                                    <h6>Physical Address</h6>
+                                    <p>99Roving St,Bigcity,PKU <br>23456</p>
+                                </div>
+                        </div>
+                </div>
+                        
+        </div>
+    </div>
+                
+
+    <div class="last-container">
+        <div class="last-box">
+            <img src="Lgo.png" id="logo-last">
+    <div class="last-list">
+    <ul>
+        <li><a href="#"> Home</a></li>
+        <li><a href="#"> About </a></li>
+        <li><a href="#"> Portfolio</a></li>
+        <li><a href="#"> Services</a></li>
+        <li><a href="#"> Blogs</a></li>
+        <li><a href="#"> ContactUs</a></li>
+    </ul>
+        </div>
+        <p>In euismod dolor non justo vestibulum laoreet.</p>
+        <div class="last-icon">
+            <i class="fa-brands fa-instagram"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fa-brands fa-twitter"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fa-brands fa-behance"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        </div>
+        <div class="last-line"></div>
+        <div class="last-text">Copyright 2022 © All Right Reserved Design by Rometheme</div>
+    </div>
+ </div>
+    <!-- <script>
+        function showMenu(){
+            var a=document.getElementById('searchBaar')
+            if(a.style.display==="none"){
+                a.style.display = "block";
+            }
+            else{
+                a.style.display="none"
+            }
+        }
+    </script> -->
+    
+</body>
+</html>
